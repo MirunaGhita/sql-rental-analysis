@@ -19,6 +19,18 @@ Ranks all hosts by total revenue from completed bookings. Includes their number 
 
 For each property, calculates what percentage of 2024 was booked (completed stays only, out of 365 days). Includes the property title, city, price per night, and average review score. Flags properties relative to the platform average occupancy as `Above Average`, `Below Average`, or `Underperforming`.
 
+  3) Guest Travel Patterns
+
+Finds guests who have booked in more than one city. For each, shows every city they've visited, how many times, and their total spend on completed stays. Includes a column showing their single highest-rated stay (property title + rating).
+
+  4) Monthly Revenue Trend Report
+
+Breaks down revenue from completed 2024 bookings month by month, grouped by city. Includes total revenue, number of bookings, and a month_over_month_change column showing the revenue difference versus the prior month for the same city.
+
+  5) Amenity Impact on Ratings
+
+Determines which amenities correlate with higher guest ratings. For each amenity, calculates the average rating_overall across all reviewed properties that have it and compares it to the platform-wide average. 
+
 ## 🗂️ Database Structure
 
 The database contains **7 tables**:
