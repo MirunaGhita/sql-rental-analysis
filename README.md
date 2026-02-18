@@ -31,6 +31,23 @@ Breaks down revenue from completed 2024 bookings month by month, grouped by city
 
 Determines which amenities correlate with higher guest ratings. For each amenity, calculates the average rating_overall across all reviewed properties that have it and compares it to the platform-wide average. 
 
+---
+**Overall Skills Practiced:**
+| Skill | Used In |
+|---|---|
+| Multi-table JOINs (`LEFT JOIN`, `INNER JOIN`, `CROSS JOIN`) | All tasks |
+| Conditional aggregation (`CASE` inside `SUM` / `COUNT`) | Tasks 1, 2 |
+| CTEs (`WITH` expressions) | Tasks 2, 3, 4, 5 |
+| Window functions (`AVG OVER`, `LAG`, `ROW_NUMBER`) | Tasks 2, 3, 4 |
+| Date functions (`DATEDIFF`, `DATEPART`, `DATENAME`, `YEAR`) | Tasks 2, 4 |
+| `CAST` and float division | Tasks 1, 2 |
+| `NULLIF` for divide-by-zero protection | Task 1 |
+| Many-to-many JOIN traversal | Task 5 |
+| Subquery filtering with `HAVING` | Task 3 |
+| `ROUND` and computed difference columns | Tasks 1, 2, 5 |
+| `ORDER BY` with column aliases | All tasks |
+---
+
 ## 🗂️ Database Structure
 
 The database contains **7 tables**:
