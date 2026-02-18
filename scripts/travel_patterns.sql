@@ -27,6 +27,7 @@ guest_spend AS (
         SUM(b.total_amount) AS total_spend
     FROM guests g
     JOIN bookings b ON g.guest_id = b.guest_id
+    WHERE b.status = 'completed'
     GROUP BY g.guest_id
 ),
 highest_rated_stay AS (
